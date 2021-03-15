@@ -1,0 +1,11 @@
+{% extends 'players/base/races_base.html' %}
+
+{% block description %}{{ dwarf.description }}{% endblock %}
+{% block plural %}Krasnoludowie{% endblock %}
+{% block str %}{{ dwarf.strength|floatformat }}{% endblock %}
+{% block dex %}{{ dwarf.dexterity|floatformat }}{% endblock %}
+{% block int %}{{ dwarf.inteligence|floatformat }}{% endblock %}
+{% block speed %}{{ dwarf.speed|floatformat }}{% endblock %}
+{% block end %}{{ dwarf.endurance|floatformat }}{% endblock %}
+{% block wil %}{{ dwarf.willpower|floatformat }}{% endblock %}
+{% block action %}{% url 'player:race_accept' pk=dwarf.pk %}{% endblock %}

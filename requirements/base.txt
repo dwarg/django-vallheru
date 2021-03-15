@@ -1,0 +1,4 @@
+Django<1.10
+django-libsass==0.6
+django-allauth==0.24.1
+django-appconf==1.0.1

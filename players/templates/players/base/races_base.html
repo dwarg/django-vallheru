@@ -1,0 +1,16 @@
+<p>{% block description %}{% endblock %}<br>
+Za 1 AP {% block plural %}{% endblock %} dostają:
+</p>
+
+<ul style="margin-left: 100px;">
+    <li>+{% block str %}{% endblock %} do siły</li>
+    <li>+{% block dex %}{% endblock %} do zręczności</li>
+    <li>+{% block int %}{% endblock %} do inteligencji</li>
+    <li>+{% block speed %}{% endblock %} do szybkości</li>
+    <li>+{% block end %}{% endblock %} do wytrzymałości</li>
+    <li>+{% block wil %}{% endblock %} do siły woli</li>
+</ul>
+
+<form method="post" action="{% block action %}{% endblock %}">{% csrf_token %}
+    <button class="small success button" type="submit">Wybierz</button>
+</form>

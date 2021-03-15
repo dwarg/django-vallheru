@@ -1,0 +1,11 @@
+{% extends 'players/base/races_base.html' %}
+
+{% block description %}{{ hobbit.description }}{% endblock %}
+{% block plural %}Hobbity{% endblock %}
+{% block str %}{{ hobbit.strength|floatformat }}{% endblock %}
+{% block dex %}{{ hobbit.dexterity|floatformat }}{% endblock %}
+{% block int %}{{ hobbit.inteligence|floatformat }}{% endblock %}
+{% block speed %}{{ hobbit.speed|floatformat }}{% endblock %}
+{% block end %}{{ hobbit.endurance|floatformat }}{% endblock %}
+{% block wil %}{{ hobbit.willpower|floatformat }}{% endblock %}
+{% block action %}{% url 'player:race_accept' pk=hobbit.pk %}{% endblock %}

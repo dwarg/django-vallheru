@@ -1,0 +1,11 @@
+{% extends 'players/base/races_base.html' %}
+
+{% block description %}{{ gnome.description|safe }}{% endblock %}
+{% block plural %}Gnomy{% endblock %}
+{% block str %}{{ gnome.strength|floatformat }}{% endblock %}
+{% block dex %}{{ gnome.dexterity|floatformat }}{% endblock %}
+{% block int %}{{ gnome.inteligence|floatformat }}{% endblock %}
+{% block speed %}{{ gnome.speed|floatformat }}{% endblock %}
+{% block end %}{{ gnome.endurance|floatformat }}{% endblock %}
+{% block wil %}{{ gnome.willpower|floatformat }}{% endblock %}
+{% block action %}{% url 'player:race_accept' pk=gnome.pk %}{% endblock %}

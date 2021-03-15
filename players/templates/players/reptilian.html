@@ -1,0 +1,11 @@
+{% extends 'players/base/races_base.html' %}
+
+{% block description %}{{ reptilian.description }}{% endblock %}
+{% block plural %}Jaszczuroludzie{% endblock %}
+{% block str %}{{ reptilian.strength|floatformat }}{% endblock %}
+{% block dex %}{{ reptilian.dexterity|floatformat }}{% endblock %}
+{% block int %}{{ reptilian.inteligence|floatformat }}{% endblock %}
+{% block speed %}{{ reptilian.speed|floatformat }}{% endblock %}
+{% block end %}{{ reptilian.endurance|floatformat }}{% endblock %}
+{% block wil %}{{ reptilian.willpower|floatformat }}{% endblock %}
+{% block action %}{% url 'player:race_accept' pk=reptilian.pk %}{% endblock %}

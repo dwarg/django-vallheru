@@ -1,0 +1,128 @@
+[
+{
+  "model": "players.playerrace",
+  "pk": 1,
+  "fields": {
+    "name": "Cz\u0142owiek",
+    "description": "Ludzie s\u0105 najbardziej zr\u00f3\u017cnicowan\u0105 i wszechstronn\u0105 ras\u0105. S\u0105 do\u015b\u0107 wysocy gdy\u017c mierz\u0105 oko\u0142o 150 - 190 cm wzrostu lecz s\u0105 osoby kt\u00f3rzy s\u0105 o wiele wy\u017csi ale i ni\u017csi. Maja ro\u017cn\u0105 postur\u0119 jednak najcz\u0119\u015bciej s\u0105 umi\u0119\u015bnieni i szczupli. Dzi\u0119ki tej r\u00f3\u017cnorodno\u015bci w\u015br\u00f3d tej rasy mog\u0105 by\u0107 oni wy\u0107wiczeni w ka\u017cdej dziedzinie. Wielu ludzkich mag\u00f3w pokona\u0142o niejednego elfiego maga oraz nie mniej wojownik\u00f3w pokona\u0142o wielu krasnoludzkich wojownik\u00f3w. Nie maja okre\u015blonych najlepszych i najgorszych stron - we wszystkim s\u0105 dobrzy ale tylko je\u015bli trenuj\u0105 jedna dziedzin\u0119 - inaczej s\u0105 dobrzy, lecz nie najlepsi. Atutem ludzi jest ich wszechstronno\u015b\u0107. Najlepszym przyk\u0142adem s\u0105 zar\u00f3wno pot\u0119\u017cni magowie jak i wojownicy. Nale\u017c\u0105 oni do najbardziej zuchwa\u0142ych i ambitnych ras. Najcz\u0119\u015bciej walcz\u0105 dla bogactwa i s\u0142awy ni\u017ali dla osobistego kszta\u0142towania swych umiej\u0119tno\u015bci. Ludzie jako rasa najlepiej przyswajaj\u0105 now\u0105 wiedz\u0119, tote\u017c szybko staja si\u0119 pot\u0119\u017cni. Nie s\u0105 wrogo nastawieni do innych w przeciwie\u0144stwie do krasnolud\u00f3w i elf\u00f3w. S\u0105 tak\u017ce uznawani za najbardziej ekscentryczn\u0105 z ras, zn\u00f3w z powodu ich r\u00f3\u017cnorodno\u015bci. Ludzie s\u0105 najlepsza rasa gdy\u017c potrafi\u0105 przystosowa\u0107 si\u0119 do ka\u017cdego \u015brodowiska w szybkim czasie i dlatego tez szybko ucz\u0105 si\u0119 wybranej przez siebie profesji.",
+    "strength": "2.500",
+    "max_strength": "50.000",
+    "dexterity": "2.500",
+    "max_dexterity": "50.000",
+    "inteligence": "2.500",
+    "max_inteligence": "50.000",
+    "willpower": "2.500",
+    "max_willpower": "50.000",
+    "speed": "2.500",
+    "max_speed": "50.000",
+    "endurance": "2.500",
+    "max_endurance": "50.000",
+    "hp": "4.000"
+  }
+},
+{
+  "model": "players.playerrace",
+  "pk": 2,
+  "fields": {
+    "name": "Elf",
+    "description": "Elfy to bardzo dziwne istoty. S\u0105 skryte i najcz\u0119\u015bciej toleruj\u0105 tylko innych ze swej rasy. S\u0105 szczup\u0142e i niskiego wzrostu bo oko\u0142o 135 - 165 cm wzrostu. Jednak mimo i\u017c wygl\u0105daj\u0105 na s\u0142abych maja niezr\u00f3wnane zdolno\u015bci magiczne. Niewielu prze\u017cywa spotkanie z do\u015bwiadczonym i rozw\u015bcieczonym elfim magiem. Mimo i\u017c s\u0105 \u015bwietnymi magami r\u00f3wnie\u017c nie s\u0105 dyskryminowane jako wojownicy. Ich finezja w walce por\u00f3wnywana jest do ruch\u00f3w kota a si\u0142a do tygrysa. Zwinno\u015b\u0107 jest najwi\u0119kszym atutem elfa poniewa\u017c jako mag musi nie tylko zna\u0107 magiczne formu\u0142y lecz wykonywa\u0107 szybkie i zr\u0119czne magiczne gesty, a gdyby zwinno\u015b\u0107 zawiod\u0142a go w walce broni\u0105 wojownika - by\u0142by zgubiony. Nie przepadaj\u0105 za innymi rasami gdy\u017c o ka\u017cdej twierdz\u0105 co innego. Ludzie s\u0105 dla nich nieobyci a krasnoludy zupe\u0142nie niezabawne. Podro\u017c zaczynaj\u0105 g\u0142\u00f3wnie dla ch\u0119ci wyruszenia i poznania \u015bwiata. Najbardziej lubi\u0105 ukazywa\u0107 swa zdolno\u015b\u0107 do zwinnej walki mieczem i \u0142ukiem, no i oczywi\u015bcie pos\u0142ugiwaniem si\u0119 magi\u0105. S\u0105 bardzo wynios\u0142e i eleganckie aczkolwiek aroganckie i nietolerancyjne. Elfy s\u0105 najlepsz\u0105 ras\u0105 gdy\u017c ich atutem jest szybko\u015b\u0107 i zwinno\u015b\u0107 dzi\u0119ki kt\u00f3rych potrafi\u0105 z niebywa\u0142\u0105 pr\u0119dko\u015bci\u0105 dopada\u0107 przeciwnik\u00f3w.",
+    "strength": "2.000",
+    "max_strength": "40.000",
+    "dexterity": "3.000",
+    "max_dexterity": "60.000",
+    "inteligence": "2.500",
+    "max_inteligence": "50.000",
+    "willpower": "2.500",
+    "max_willpower": "50.000",
+    "speed": "3.000",
+    "max_speed": "55.000",
+    "endurance": "2.000",
+    "max_endurance": "50.000",
+    "hp": "3.000"
+  }
+},
+{
+  "model": "players.playerrace",
+  "pk": 3,
+  "fields": {
+    "name": "Krasnolud",
+    "description": "Krasnoludy znane s\u0105 ze swej ogromnej si\u0142y, zdolno\u015bci bojowej oraz picia piwa w karczmie. Mo\u017ce nie zadziwiaj\u0105 nikogo wzrostem bo mierz\u0105 oko\u0142o 120 - 135 cm wzrostu - jednak nie nale\u017cy ich przez to lekcewa\u017cy\u0107. S\u0105 bardzo krzepkie i umi\u0119\u015bnione oraz ka\u017cdy z nich nosi brod\u0119 (krasnolud nie maj\u0105cy brody uznawany jest za zha\u0144bionego). Ich atutem jest si\u0142a - i oczywi\u015bcie to oni s\u0105 najlepszymi kowalami Krain. Podr\u00f3\u017cuj\u0105 g\u0142\u00f3wnie dla zdobycia chwa\u0142y i szacunku dla swojego klanu. \u017byj\u0105 do 400 lat mo\u017ce nawet d\u0142u\u017cej wiec maja du\u017co czasu na osi\u0105gniecie w sobie doskona\u0142o\u015bci w danej profesji. Maja do\u015b\u0107 neutralne relacje z lud\u017ami lecz co do elf\u00f3w maja du\u017ce uprzedzenia. Mimo i\u017c kiedy\u015b elfy walczy\u0142y ramie w ramie z krasnoludami teraz czuj\u0105 do siebie du\u017c\u0105 antypati\u0119. Nie s\u0105 powszechnie lubiana rasa gdy\u017c s\u0105 zadziorni i bardzo uparci. S\u0105 najlepsz\u0105 rasa bo potrafi\u0105 wykorzysta\u0107 swoje najwi\u0119ksze umiej\u0119tno\u015bci czyli si\u0142\u0119 i wytrzyma\u0142o\u015b\u0107 do walki skuteczniej ni\u017c inne rasy.",
+    "strength": "3.500",
+    "max_strength": "60.000",
+    "dexterity": "2.000",
+    "max_dexterity": "40.000",
+    "inteligence": "2.500",
+    "max_inteligence": "50.000",
+    "willpower": "2.500",
+    "max_willpower": "50.000",
+    "speed": "2.000",
+    "max_speed": "40.000",
+    "endurance": "3.000",
+    "max_endurance": "40.000",
+    "hp": "5.000"
+  }
+},
+{
+  "model": "players.playerrace",
+  "pk": 4,
+  "fields": {
+    "name": "Hobbit",
+    "description": "Hobbici niedawno przybyli do Vallheru, lecz ju\u017c zd\u0105\u017cyli zaznaczy\u0107 swoj\u0105 obecno\u015b\u0107. Znani s\u0105 z pogodnego charakteru oraz umiej\u0119tno\u015bci wyczyszczenia spi\u017carni w czasie kr\u00f3tszym ni\u017c legion wyg\u0142odnia\u0142ych Krasnolud\u00f3w. S\u0105 najni\u017csz\u0105 znan\u0105 ras\u0105 - mierz\u0105 od 90 do 120 cm wzrostu. Maj\u0105 najcz\u0119\u015bciej ciemnobr\u0105zowe, k\u0119dzierzawe w\u0142osy oraz br\u0105zowe oczy. Cech\u0105 charakterystyczn\u0105 tej rasy jest fakt i\u017c \u017caden z jej przedstawicieli nie nosi obuwia. Spowodowane jest to tym, \u017ce posiadaj\u0105 na stopach niesamowicie bujne ow\u0142osienie, dzi\u0119ki kt\u00f3remu mog\u0105 na bosaka w\u0119drowa\u0107 nawet po \u015bniegu. Og\u00f3lnie przypominaj\u0105 Ludzi st\u0105d zwyk\u0142o nazywa\u0107 si\u0119 ich Ma\u0142ymi Lud\u017ami. Wi\u0119kszo\u015b\u0107 Hobbit\u00f3w jest nieco oty\u0142a, co wprowadzi\u0142o ju\u017c w b\u0142\u0105d wielu przedstawicieli innych ras, albowiem je\u017celi Hobbit zechce mo\u017ce porusza\u0107 si\u0119 r\u00f3wnie zwinnie jak Elf. S\u0105 przy tym bardzo wytrzymali na trudy. Jednak rzadko owe cechy ujawniaj\u0105 si\u0119 w tej rasie, poniewa\u017c nad brud go\u015bci\u0144ca oraz dreszczyk przyg\u00f3d, rasa ta przedk\u0142ada ciep\u0142o domowego kominka. Je\u017celi ju\u017c wyruszaj\u0105 w \u015bwiat, to raczej z czystej ciekawo\u015bci ni\u017c ze wzgl\u0119du na jakie\u015b szczytne cele. Jest to rasa bardzo pokojowa, \u017cyje z dala od spraw wielkiego \u015bwiata i nie miesza si\u0119 do spor\u00f3w innych istot. Ma\u0142o kt\u00f3ry z nich para si\u0119 wojaczk\u0105 czy magi\u0105 ale ze wzgl\u0119du na swoj\u0105 pracowito\u015b\u0107, przedmioty wykonane przez Hobbit\u00f3w bez problemu mog\u0105 konkurowa\u0107 z dzie\u0142ami mistrz\u00f3w elfich czy te\u017c krasnoludzkich - przynajmniej je\u017celi chodzi o wykonanie. Wed\u0142ug niepotwierdzonych informacji wielu z podr\u00f3\u017cnik\u00f3w tej rasy, kt\u00f3rzy przybyli do Miasta zasili\u0142o szeregi przest\u0119pczej organizacji znanej jako Gildia Z\u0142odziei. \u015aledztwo w tej sprawie trwa.",
+    "strength": "1.500",
+    "max_strength": "40.000",
+    "dexterity": "3.500",
+    "max_dexterity": "60.000",
+    "inteligence": "2.500",
+    "max_inteligence": "50.000",
+    "willpower": "2.500",
+    "max_willpower": "50.000",
+    "speed": "1.500",
+    "max_speed": "60.000",
+    "endurance": "2.500",
+    "max_endurance": "45.000",
+    "hp": "4.000"
+  }
+},
+{
+  "model": "players.playerrace",
+  "pk": 5,
+  "fields": {
+    "name": "Jaszczurocz\u0142ek",
+    "description": "Jaszczuroludzie to jedna z najstarszych ras inteligentnych jakie znajduj\u0105 si\u0119 na ziemiach Vallheru. Dawni panowie tego \u015bwiata, dzi\u015b ju\u017c tylko cienie w\u0142asnej pot\u0119gi sprzed lat. Obecnie jako nomadowie zamieszkuj\u0105 Pustyni\u0119 Hansid el-Suda. Jako \u017ce najlepiej czuj\u0105 si\u0119 w gor\u0105cym klimacie dopiero od niedawna spotka\u0107 mo\u017cna przedstawicieli tej rasy w Mie\u015bcie. Z wygl\u0105du przypominaj\u0105 pot\u0119\u017cn\u0105 dwuno\u017cn\u0105 jaszczurk\u0119. Najwy\u017cszy znany przedstawiciel tej rasy mia\u0142 ok 2,5 metra wzrostu, najni\u017cszy - 150 cm. Ich sk\u00f3ra z biegiem czasu pokrywa si\u0119 twardymi \u0142uskami kt\u00f3re mog\u0105 pe\u0142ni\u0107 rol\u0119 dodatkowego pancerza. Najcz\u0119\u015bciej maj\u0105 zielony lub br\u0105zowy kolor sk\u00f3ry. Jednak najwi\u0119ksz\u0105 dum\u0105 ka\u017cdego Reptiliona jest jego ogon - s\u0105 bardzo przeczuleni na jego punkcie. Ich gadzie, pozbawione emocji twarze sprawiaj\u0105 i\u017c przedstawiciele innych ras czuj\u0105 si\u0119 w ich towarzystwie bardzo nieswojo. Wi\u0119kszo\u015b\u0107 Jaszczuroludzi jest niespokojna i agresywna - idealny materia\u0142 na wojownika. Znani s\u0105 ze swej si\u0142y oraz szybko\u015bci. Jednak o ich inteligencji kr\u0105\u017c\u0105 w\u015br\u00f3d innych ras setki dowcip\u00f3w. W swojej ojczy\u017anie praktycznie \u017caden Gadocz\u0142ek nie zajmuje si\u0119 magi\u0105, jedynie odst\u0119pcy, kt\u00f3rzy opu\u015bcili swych rodak\u00f3w i przybyli do Miasta pr\u00f3buj\u0105 ni\u0105 si\u0119 zajmowa\u0107, najcz\u0119\u015bciej jednak z mizernym skutkiem. Wielu z nich nie cierpi jakiejkolwiek formy magii. Ci co opu\u015bcili swoje klany to najcz\u0119\u015bciej \u017cadni bogactw i chwa\u0142y awanturnicy. Niestety klimat Vallheru sprawia i\u017c rasa ta na innych terenach ni\u017c pustynie nie mo\u017ce pokaza\u0107 wszystkich swych mo\u017cliwo\u015bci. Jest to spowodowane tym i\u017c Jaszczuroludzie s\u0105 zmiennocieplni, st\u0105d najlepiej czuj\u0105 si\u0119 w bardzo gor\u0105cym klimacie - a tych jest niestety do\u015b\u0107 ma\u0142o. Wyroby ich kowali czy te\u017c \u0142ucznik\u00f3w nie s\u0105 mo\u017ce zbyt pi\u0119kne ale za to bardzo funkcjonalne. Dawniej rasa ta by\u0142a w\u0142adc\u0105 tych ziem, jednak obecnie ma\u0142o kto liczy si\u0119 ze zdaniem jej przedstawicieli. Reptilioni sami odizolowali si\u0119 od innych ras kontaktuj\u0105c si\u0119 najcz\u0119\u015bciej jedynie z przedstawicielami swojego gatunku. Wi\u0119kszo\u015b\u0107 z tych co przybywaj\u0105 do Miasta, ze wzgl\u0119du na swoj\u0105 porywczo\u015b\u0107 i nieokrzesanie nazywa si\u0119 barbarzy\u0144cami.",
+    "strength": "3.500",
+    "max_strength": "60.000",
+    "dexterity": "2.500",
+    "max_dexterity": "50.000",
+    "inteligence": "1.500",
+    "max_inteligence": "40.000",
+    "willpower": "1.500",
+    "max_willpower": "50.000",
+    "speed": "3.000",
+    "max_speed": "60.000",
+    "endurance": "2.500",
+    "max_endurance": "50.000",
+    "hp": "5.000"
+  }
+},
+{
+  "model": "players.playerrace",
+  "pk": 6,
+  "fields": {
+    "name": "Gnom",
+    "description": "Gnomy pojawi\u0142y si\u0119 na Vallheru ca\u0142kiem niedawno. Z\u0142o\u015bliwi twierdz\u0105 i\u017c s\u0105 rasa ta jest efektem ubocznym jakiego\u015b zakl\u0119cia. I rzeczywi\u015bcie, ich odporno\u015b\u0107 na magi\u0119 jest nieco ni\u017csza ni\u017c u innych ras (mo\u017ce z wyj\u0105tkiem Jaszczuroludzi). Gnomy znane s\u0105 z nieco chaotycznego charakteru, ich p\u0119d do poznania ca\u0142ego \u015bwiata nie raz wp\u0119dzi\u0142 przedstawiciela tej rasy (oraz jego przyjaci\u00f3\u0142) w k\u0142opoty. Z zachowania nieco podobni do Hobbit\u00f3w oraz Krasnolud\u00f3w, lubuj\u0105 si\u0119 przede wszystkim w rzemio\u015ble oraz r\u00f3\u017cnych dziwnych wynalazkach. Podekscytowany Gnom potrafi wyrzuca\u0107 z siebie s\u0142owa szybciej ni\u017c najszybszy elfi \u0142ucznik strza\u0142y. S\u0105 jedn\u0105 z najni\u017cszych znanych ras istot inteligentnych - mierz\u0105 od 100 do 130 cm wzrostu. Z budowy cia\u0142a podobni nieco do Krasnolud\u00f3w (ci ostatni bardzo energicznie wypieraj\u0105 si\u0119 jakichkolwiek por\u00f3wna\u0144), o prostych jasnych w\u0142osach (rzecz jasna, je\u017celi wcze\u015bniej dany osobnik nie straci\u0142 ich podczas eksperyment\u00f3w alchemicznych) oraz czarnych oczach. \u017bywe usposobienie sprawia i\u017c ci\u0119\u017cko nie czu\u0107 sympatii do Gnom\u00f3w - przynajmniej do ich pierwszego wybryku. Rzadko zajmuj\u0105 si\u0119 magi\u0105 - brak im cierpliwo\u015bci do czego\u015b czego efekt\u00f3w nie wida\u0107 od razu. Jako rasa pokojowo nastawiona, rzadko r\u00f3wnie\u017c zostaj\u0105 wojownikami - cho\u0107 taki Gnom uzbrojony i wyposa\u017cony w najnowsze wynalazki gnomiej techniki potrafi sia\u0107 prawdziwe spustoszenie na polu walki. Niestety r\u00f3wnie\u017c i w\u015br\u00f3d w\u0142asnych towarzyszy. Ich zami\u0142owanie do rzemios\u0142a oraz alchemii jest og\u00f3lnie znane. To ostatnie r\u00f3wnie\u017c bardzo widowiskowe. Wyroby ich rzemie\u015blnik\u00f3w s\u0105 doskona\u0142ej jako\u015bci, cho\u0107 czasami zbytnio udziwnione. S\u0105 przyjacielsko nastawieni do wszystkich znanych ras.<br>\r\nGnomy maj\u0105 podwojon\u0105 premi\u0119 z profesji Rzemie\u015blnik.",
+    "strength": "1.500",
+    "max_strength": "40.000",
+    "dexterity": "2.500",
+    "max_dexterity": "55.000",
+    "inteligence": "2.500",
+    "max_inteligence": "55.000",
+    "willpower": "2.000",
+    "max_willpower": "40.000",
+    "speed": "1.500",
+    "max_speed": "50.000",
+    "endurance": "2.500",
+    "max_endurance": "40.000",
+    "hp": "2.000"
+  }
+}
+]

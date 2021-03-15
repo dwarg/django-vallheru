@@ -1,0 +1,86 @@
+{% load static compress %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vallheru: {% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/foundation.min.css' %}" />
+  {% compress css %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'css/app.scss' %}" />
+  {% endcompress %}
+</head>
+</body>
+<header>
+  <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title">Menu</div>
+  </div>
+
+  <div class="top-bar" id="main-menu">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Django Vallheru</li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
+        <li class="has-submenu">
+          <a href="#">One</a>
+          <ul class="submenu menu vertical" data-submenu>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div>
+  <main>
+    <aside>
+      <ul>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'account_logout' %}">Wyloguj się</a></li>
+
+        <hr />
+        <li><a href="{% url 'player:statistic' %}">Statystyki</a></li>
+        <li><a href="{% url 'equipment:armorer' %}">Zbrojmistrz</a></li>
+        {% else %}
+        <li><a href="{% url 'account_login' %}">Zaloguj się</a></li>
+        <li><a href="{% url 'account_signup' %}">Zarejestruj się</a></li>
+        {% endif %}
+      </ul>
+
+    {% if messages %}
+        {% for message in messages %}
+        <div class="callout small {% if message.tags %}{{ message.tags }}{% endif %}" data-closable>
+            {{ message.tag }}
+            {{ message }}
+            <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        </li>
+        {% endfor %}
+    {% endif %}
+
+    </aside>
+    <section>{% block content %}{% endblock %}</section>
+  </main>
+  <aside></aside>
+</div>
+<footer>© 2016 Django-Vallheru based on <a href="https://launchpad.net/vallheru">Vallheru</a> </footer>
+<script src="{% static 'js/vendor/jquery.min.js' %}"></script>
+<script src="{% static 'js/vendor/what-input.min.js' %}"></script>
+<script src="{% static 'js/foundation.min.js' %}"></script>
+<script>
+  $(document).foundation();
+</script>
+
+</html>

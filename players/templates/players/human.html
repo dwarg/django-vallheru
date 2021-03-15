@@ -1,0 +1,11 @@
+{% extends 'players/base/races_base.html' %}
+
+{% block description %}{{ human.description }}{% endblock %}
+{% block plural %}Ludzie{% endblock %}
+{% block str %}{{ human.strength|floatformat }}{% endblock %}
+{% block dex %}{{ human.dexterity|floatformat }}{% endblock %}
+{% block int %}{{ human.inteligence|floatformat }}{% endblock %}
+{% block speed %}{{ human.speed|floatformat }}{% endblock %}
+{% block end %}{{ human.endurance|floatformat }}{% endblock %}
+{% block wil %}{{ human.willpower|floatformat }}{% endblock %}
+{% block action %}{% url 'player:race_accept' pk=human.pk %}{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}Wybierz rasę{% endblock %}
+{% block content %}
+
+
+<div style="text-align: center;vertical-align: middle">Wybierz rasę</div>
+<div>
+  Tutaj możesz wybrać rasę swojej postaci. Każda rasa ma swoje plusy i minusy (ich opis znajdziesz po kliknięciu
+  w link). Zastanów się dobrze, ponieważ poźniej nie będziesz już mógł zmienić swojej rasy.
+</div><br>
+<div class="row collapse">
+    <div class="medium-2 medium-text-center columns">
+        <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+            <li class="tabs-title"><a href="#panel1v">Człowiek</a></li>
+            <li class="tabs-title"><a href="#panel2v">Elf</a></li>
+            <li class="tabs-title"><a href="#panel3v">Krasnolud</a></li>
+            <li class="tabs-title"><a href="#panel4v">Hobbit</a></li>
+            <li class="tabs-title"><a href="#panel5v">Jaszczuroczłek</a></li>
+            <li class="tabs-title"><a href="#panel6v">Gnom</a></li>
+        </ul><br>
+        <a href="{% url 'player:statistic' %}" class="small button">Wróć</a>
+    </div>
+    <div class="medium-10 columns">
+        <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+            {% for race in races %}
+                {% if race.name == 'Człowiek' %}
+                    <div class="tabs-panel" id="panel1v">
+                      {% include 'players/human.html' with human=race %}
+                    </div>
+                {% elif race.name == 'Elf' %}
+                    <div class="tabs-panel" id="panel2v">
+                      {% include 'players/elf.html' with elf=race %}
+                    </div>
+                {% elif race.name == 'Krasnolud' %}
+                    <div class="tabs-panel" id="panel3v">
+                      {% include 'players/dwarf.html' with dwarf=race %}
+                    </div>
+                {% elif race.name == 'Hobbit' %}
+                    <div class="tabs-panel" id="panel4v">
+                      {% include 'players/hobbit.html' with hobbit=race %}
+                    </div>
+                {% elif race.name == 'Jaszczuroczłek' %}
+                    <div class="tabs-panel" id="panel5v">
+                      {% include 'players/reptilian.html' with reptilian=race %}
+                    </div>
+                {% else %}
+                    <div class="tabs-panel" id="panel6v">
+                      {% include 'players/gnome.html' with gnome=race %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div><br>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'players/base/races_base.html' %}
+
+{% block description %}{{ elf.description }}{% endblock %}
+{% block plural %}Elfowie{% endblock %}
+{% block str %}{{ elf.strength|floatformat }}{% endblock %}
+{% block dex %}{{ elf.dexterity|floatformat }}{% endblock %}
+{% block int %}{{ elf.inteligence|floatformat }}{% endblock %}
+{% block speed %}{{ elf.speed|floatformat }}{% endblock %}
+{% block end %}{{ elf.endurance|floatformat }}{% endblock %}
+{% block wil %}{{ elf.willpower|floatformat }}{% endblock %}
+{% block action %}{% url 'player:race_accept' pk=elf.pk %}{% endblock %}

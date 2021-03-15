@@ -1,0 +1,80 @@
+{% extends "base.html" %} {% load i18n %} {% block title %}Statystyki{% endblock %} {% block content %}
+
+
+<p>
+  Stoisz przed małym sklepem z bogato ozdobionym szyldem PŁATNERZ. Kiedy wchodzisz do środka widzisz kilka stojaków z żelaznymi i stalowymi zbrojami i kolczugami. Za ladą z narzędziami płatnerskimi stoi stary aczkolwiek tęgi i silny krasnolud. Witaj. W
+  czym stary Brodur może ci pomóc? Mam wszystko co tu widzisz chyba ze szukasz czegoś droższego... Mówiąc to odsłonił małą firankę na zaplecze gdzie na manekinach powieszone były wspaniale mithrilowe i meteorytowe, adamantowe a nawet kryształowe pełne
+  zbroje. Więc? Bierzesz coś?
+</p>
+
+{% if messages %} {% for message in messages %}
+<div class="{{ message.tags }} callout" data-closable="slide-out-right">
+  <h6>{{ message }}</h6>
+  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{% endfor %}
+ {% endif %}
+  {% regroup equipment_list by eq_type as eq %}
+  <dl class="tabs contained five-up" data-tabs id="armorer-tabs">
+  {% for type in eq %}
+    <dd class="tabs-title {% if forloop.first %}is-active{% endif %}"><a href="#panel-{{ type.grouper }}" {% if forloop.first %}aria-selected="true{% endif %}">{% trans type.grouper %}</a></dd>
+  {% endfor %}
+</dl>
+  <div class="tabs-content" data-tabs-content="example-tabs">
+   {% for type in eq %}
+
+  <div class="tabs-panel {% if forloop.first %}is-active{% endif %}" id="panel-{{ type.grouper }}">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              nazwa
+            </th>
+            <th>
+              moc
+            </th>
+            <th>
+              wytrzymałość
+            </th>
+            <th>
+              wymagany poziom
+            </th>
+            <th>
+              zręczność
+            </th>
+            <th>
+              naprawa
+            </th>
+            <th>
+              koszt
+            </th>
+            <th>
+              opcje
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in type.list %}
+          <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.power }}</td>
+            <td>{{ item.endurance }}</td>
+            <td>{{ item.level }}</td>
+            <td>{{ item.dexterity }}</td>
+            <td>{{ item.repair }}</td>
+            <td>{{ item.cost }}</td>
+            <td>
+              <form method="post" action="{% url 'equipment:armorer-buy' item_id=item.pk %}">
+                {% csrf_token %}
+                <button class="button" type="submit">kup</button>
+              </form>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}Statystyki{% endblock %}
+{% block content %}
+
+<p>
+  Witaj w swoich statystykach. Możesz tutaj zobaczyć informacje na temat swojej postaci w grze.
+</p>
+<article class="statistic-table statistic-table-half">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Statystyki w grze
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><b>AP:</b> {{ player.ap }}</td></tr>
+      <tr><td><b>Rasa:</b> {% if player.race %}{{ player.race }}{% else %}(<a href="{% url 'player:race' %}">Wybierz</a>){% endif %}</td></tr>
+      <tr><td><b>Klasa:</b> {{ player.player_class }}</td></tr>
+      <tr><td><b>Wyznanie:</b> {{ player.religion }}</td></tr>
+      <tr><td><b>Płeć:</b> {{ player.sex }}</td></tr>
+      <tr><td><b>Zręczność:</b> {{ player.dexterity }}</td></tr>
+      <tr><td><b>Siła:</b> {{ player.strength }}</td></tr>
+      <tr><td><b>Inteligencja:</b> {{ player.inteligence }}</td></tr>
+      <tr><td><b>Siła Woli:</b> {{ player.willpower }}</td></tr>
+      <tr><td><b>Szybkość:</b> {{ player.speed }}</td></tr>
+      <tr><td><b>Wytrzymałość:</b> {{ player.endurance }}</td></tr>
+      <tr><td><b>Punkty Magii:</b> {{ player.magic_points }}</td></tr>
+      <tr><td><b>Punkty Wiary:</b> {{ player.religion_points }}</td></tr>
+      <tr><td><b>Energia:</b> {{ player.energy }}/{{ player.max_energy }}</td></tr>
+      <tr><td><b>Ostatnio zabity:</b> {{ player.last_killed }}</td></tr>
+      <tr><td><b>Ostatnio zabity przez:</b> {{ player.last_killed_by }}</td></tr>
+    </tbody>
+  </table>
+</article>
+<article class="statistic-table statistic-table-half">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Informacje
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><b>Ranga:</b> NULL</td></tr>
+      <tr><td><b>Lokacja:</b> NULL</td></tr>
+      <tr><td><b>Wiek:</b> NULL</td></tr>
+      <tr><td><b>IP:</b> {{ ip }}</td></tr>
+      <tr><td><b>Email:</b> {{ player.email }}</td></tr>
+      <tr><td><b>Klan:</b> NULL</td></tr>
+    </tbody>
+  </table>
+</article>
+<article class="statistic-table statistic-table-wide">
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">
+          Umiejętności
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><b>Kowalstwo:</b> {{ player.skills.blacksmithing }}</td><td><b>Strzelectwo:</b> {{ player.skills.archery }}</td></tr>
+      <tr><td><b>Alchemia:</b> {{ player.skills.alchemy }}</td><td><b>Uniki:</b> {{ player.skills.evasion }}</td></tr>
+      <tr><td><b>Stolarstwo:</b> {{ player.skills.carpentry }}</td><td><b>Rzucanie czarów:</b> {{ player.skills.spell_casting }}</td></tr>
+      <tr><td><b>Walka bronią:</b> {{ player.skills.melee }}</td><td><b>Dowodzenie:</b> {{ player.skills.leadership }}</td></tr>
+      <tr><td><b>Hodowla:</b> {{ player.skills.breeding }}</td><td><b>Górnictwo:</b> {{ player.skills.mining }}</td></tr>
+      <tr><td><b>Drwalnictwo:</b> {{ player.skills.wood_working }}</td><td><b>Zielarstwo:</b> {{ player.skills.herbalism }}</td></tr>
+      <tr><td><b>Jubilerstwo:</b> {{ player.skills.jewellery }}</td><td><b>Hutnictwo:</b> {{ player.skills.metallurgy }}</td></tr>
+      <tr><td><b>Spostrzegawczość:</b> {{ player.skills.perceptivity }}</td><td></td></tr>
+    </tbody>
+  </table>
+</article>
+{% endblock %}
