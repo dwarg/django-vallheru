@@ -2,7 +2,6 @@
 Python &amp; Django implementation of Vallheru engine.
 
 # install dependency
-# it may require some system packages like g++, python3-dev
 pip install -r requirements.txt
 # migrations
 python manage.py migrate
