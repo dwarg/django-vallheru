@@ -7,7 +7,7 @@ pip install -r requirements.txt
 python manage.py migrate
 # load fixtures
 python manage.py loaddata vallheru/fixtures/sites.json
-# create super user
+# create superuser
 python manage.py createsuperuser
 # start server
 python manage.py runserver
